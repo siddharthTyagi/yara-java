@@ -44,7 +44,7 @@ Usage and examples
             //  get instance to rules for scanning
             YaraScanner sc = compiler.createScanner();
             try {
-                File subject = new File(Thread.currentThread().getContextClassLoader().getResource("libyara/NuixIntegrationTest.class").getFile());
+                File subject = new File(Thread.currentThread().getContextClassLoader().getResource("classes").getFile());
                 
                 //  set call back for rule match found
                 sc.setCallback((rule, ref) -> {
